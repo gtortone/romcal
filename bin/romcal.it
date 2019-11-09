@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+var romcal = require('../romcal');
+
+var cal = romcal.calendarFor({
+    year: 2018,
+    country: 'italy',
+    locale: 'it',
+    christmastideEnds: 'o',
+    epiphanyOnJan6: true,
+    corpusChristiOnThursday: false,
+    ascensionOnSunday: true,
+    type: 'liturgical',
+});
+
+console.log(JSON.stringify(cal, null, 4));
