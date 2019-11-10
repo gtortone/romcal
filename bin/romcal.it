@@ -10,6 +10,7 @@ var cal = romcal.calendarFor({
     corpusChristiOnThursday: false,
     ascensionOnSunday: true,
     type: 'liturgical',
-});
+}, 
+true);
 
-console.log(JSON.stringify(cal, null, 4));
+console.log(JSON.stringify(cal, null, 3));
